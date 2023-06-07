@@ -8,3 +8,6 @@ https://www.acmicpc.net/problem/1000
 
 ### 1-3. a * b
 https://www.acmicpc.net/problem/10998
+
+### 1-4. 사칙연산
+https://www.acmicpc.net/problem/10869

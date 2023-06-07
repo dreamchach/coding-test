@@ -16,5 +16,8 @@ https://www.acmicpc.net/problem/10869
 https://www.acmicpc.net/problem/2588
 
 ## ch2. 조건문 예제
-### 1-2. 시험 성적
+### 2-1. 시험 성적
 https://www.acmicpc.net/problem/9498
+
+### 2-2. 알람 시계
+https://www.acmicpc.net/problem/2884

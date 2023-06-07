@@ -24,3 +24,6 @@ https://www.acmicpc.net/problem/2884
 
 ### 2-3. 오븐 시계
 https://www.acmicpc.net/problem/2525
+
+### 2-4. 주사위 세개
+https://www.acmicpc.net/problem/2480

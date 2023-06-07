@@ -101,6 +101,7 @@ if (b < 45) {
 console.log(a, b)
 */
 
+/*
 // 2-3
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch2/2-3.txt').toString().split('\n')
@@ -124,4 +125,23 @@ a = parseInt(totalMinute / 60);
 b = totalMinute % 60
 
 console.log(a, b)
+*/
+
+// 2-4.
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch2/2-4.txt').toString().split('\n')
+const [a,b,c] = input[0].split(' ').map((item)=>parseInt(item))
+
+if(a === b && b === c) {
+    console.log(10000 + a * 1000)
+}else if(a === b) {
+    console.log(1000 + a * 100)
+}else if(a === c) {
+    console.log(1000 + a * 100)
+}else if(b === c) {
+    console.log(1000 + b * 100)
+}else {
+    console.log(Math.max(a,b,c) * 100)
+}
+
 

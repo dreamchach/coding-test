@@ -3,6 +3,7 @@
 console.log('Hello World!')
 */
 
+/*
 // 1-2
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch1/1-2.txt').toString().split('\n')
@@ -12,3 +13,12 @@ const line = input[0].split(' ')
 const a = parseInt(line[0])
 const b = parseInt(line[1])
 console.log(a+b)
+*/
+
+// 1-3
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch1/1-3.txt').toString().split('\n')
+const line = input[0].split(' ')
+const a = parseInt(line[0])
+const b = parseInt(line[1])
+console.log(a*b)

@@ -6,4 +6,5 @@ https://www.acmicpc.net/problem/2557
 ### 1-2. a + b
 https://www.acmicpc.net/problem/1000
 
-### 1-3. 
+### 1-3. a * b
+https://www.acmicpc.net/problem/10998

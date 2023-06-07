@@ -75,13 +75,14 @@ if(a >= 90){
 }
 */
 
+/*
+// 2-2
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch2/2-2.txt').toString().split('\n')
 const line = input[0].split(' ')
 let a = parseInt(line[0])
 let b = parseInt(line[1])
 
-/*
 if(b<45){
     if(a=== 0){
         console.log(23, 60-Math.abs(b-45))
@@ -91,7 +92,6 @@ if(b<45){
 }else {
     console.log(a, b-45)
 }
-*/
 
 if (b < 45) {
     a -= 1
@@ -99,3 +99,29 @@ if (b < 45) {
     if (a < 0) a = 23;
 } else b -= 45;
 console.log(a, b)
+*/
+
+// 2-3
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch2/2-3.txt').toString().split('\n')
+const line = input[0].split(' ')
+let a = parseInt(line[0])
+let b = parseInt(line[1])
+let c = parseInt(input[1])
+
+if(b + c < 60){
+    b = b + c
+}else {
+    a += Math.floor((b + c) / 60)
+    b = (b + c) % 60
+    if(a > 23){
+        a = a - 24
+    }
+}
+
+let totalMinute = a * 60 + b + c
+a = parseInt(totalMinute / 60);
+b = totalMinute % 60
+
+console.log(a, b)
+

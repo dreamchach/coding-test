@@ -21,3 +21,6 @@ https://www.acmicpc.net/problem/9498
 
 ### 2-2. 알람 시계
 https://www.acmicpc.net/problem/2884
+
+### 2-3. 오븐 시계
+https://www.acmicpc.net/problem/2525

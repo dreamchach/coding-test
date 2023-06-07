@@ -146,6 +146,7 @@ if(a === b && b === c) {
 }
 */
 
+/*
 //3-1
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch3/3-1.txt').toString().split('\n')
@@ -155,4 +156,17 @@ let b = 0
 for(let i = 0; i <= a; i += 1){
     b += i
 }
+
+b = a * (a + 1) / 2
+
 console.log(b)
+*/
+
+// 3-2
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch3/3-2.txt').toString().split('\n')
+const a = parseInt(input[0])
+
+for(let i = 1; i <= 9; i += 1){
+    console.log(`${a} * ${i} = ${a * i}`)
+}

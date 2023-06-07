@@ -162,6 +162,7 @@ b = a * (a + 1) / 2
 console.log(b)
 */
 
+/*
 // 3-2
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch3/3-2.txt').toString().split('\n')
@@ -169,4 +170,18 @@ const a = parseInt(input[0])
 
 for(let i = 1; i <= 9; i += 1){
     console.log(`${a} * ${i} = ${a * i}`)
+}
+*/
+
+// 3-3
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch3/3-3.txt').toString().split('\n')
+const a = parseInt(input[0])
+
+for(let i = 1; i <= a; i += 1){
+    let b = ''
+    for(let j = 1; j <= i; j += 1){
+        b += '*'
+    }
+    console.log(b)
 }

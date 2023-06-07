@@ -34,3 +34,6 @@ https://www.acmicpc.net/problem/8393
 
 ### 3-2. 구구단
 https://www.acmicpc.net/problem/2739
+
+### 3-3. 별 찍기 -1
+https://www.acmicpc.net/problem/2438

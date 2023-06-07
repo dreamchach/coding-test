@@ -127,6 +127,7 @@ b = totalMinute % 60
 console.log(a, b)
 */
 
+/*
 // 2-4.
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch2/2-4.txt').toString().split('\n')
@@ -143,5 +144,15 @@ if(a === b && b === c) {
 }else {
     console.log(Math.max(a,b,c) * 100)
 }
+*/
 
+//3-1
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch3/3-1.txt').toString().split('\n')
+const a = parseInt(input[0])
+let b = 0
 
+for(let i = 0; i <= a; i += 1){
+    b += i
+}
+console.log(b)

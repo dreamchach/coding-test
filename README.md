@@ -27,3 +27,7 @@ https://www.acmicpc.net/problem/2525
 
 ### 2-4. 주사위 세개
 https://www.acmicpc.net/problem/2480
+
+## ch3. 반복문 예제
+### 3-1. 합
+https://www.acmicpc.net/problem/8393

@@ -173,6 +173,7 @@ for(let i = 1; i <= 9; i += 1){
 }
 */
 
+/*
 // 3-3
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch3/3-3.txt').toString().split('\n')
@@ -185,3 +186,17 @@ for(let i = 1; i <= a; i += 1){
     }
     console.log(b)
 }
+*/
+
+// 3-4
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch3/3-4.txt').toString().split('\n')
+const length = parseInt(input[0])
+let answer = ''
+
+for(let i = 1; i <= length; i += 1){
+    const line = input[i].split(' ')
+    answer += parseInt(line[0]) + parseInt(line[1]) + '\n'
+}
+
+console.log(answer)

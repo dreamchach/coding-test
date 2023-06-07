@@ -37,3 +37,6 @@ https://www.acmicpc.net/problem/2739
 
 ### 3-3. 별 찍기 -1
 https://www.acmicpc.net/problem/2438
+
+### 3-4. 빠른 A + B
+https://www.acmicpc.net/problem/15552

@@ -15,5 +15,6 @@ https://www.acmicpc.net/problem/10869
 ### 1-5. 곱셈
 https://www.acmicpc.net/problem/2588
 
-## ch2.
-### 1-1. 
+## ch2. 조건문 예제
+### 1-2. 시험 성적
+https://www.acmicpc.net/problem/9498

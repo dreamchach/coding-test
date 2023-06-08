@@ -254,9 +254,22 @@ for(let i = 0; i <= a - 1; i += 1){
 }
 */
 
+/*
 // 4-5
 const fs = require('fs')
 const [a, ...b] = fs.readFileSync('./input/ch4/4-5.txt').toString().trim().split('\n')
 const c = b[0].split(' ').map(Number)
 const max = Math.max(...c)
 console.log(c.reduce((a, b)=>a + (b / max * 100), 0)/a)
+*/
+
+// 5-1
+const fs = require('fs')
+const [a, b] = fs.readFileSync('./input/ch5/5-1.txt').toString().trim().split('\n')
+const c = b.split('').map(Number)
+let answer = 0
+
+for(let d of c){
+    answer += d
+}
+console.log(answer)

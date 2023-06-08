@@ -56,3 +56,7 @@ https://www.acmicpc.net/problem/4344
 
 ### 4-5. 평균
 https://www.acmicpc.net/problem/1546
+
+## ch5. 문자열 예제
+### 5-1. 숫자의 합
+https://www.acmicpc.net/problem/11720

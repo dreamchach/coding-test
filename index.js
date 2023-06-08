@@ -222,6 +222,7 @@ console.log(array[0])
 console.log(index + 1)
 */
 
+/*
 // 4-3
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch4/4-3.txt').toString().trim().split('\n')
@@ -230,3 +231,23 @@ const answer = new Set()
 
 data.map((item)=> answer.add(item%42))
 console.log(answer.size)
+*/
+
+// 4-4
+const fs = require('fs')
+const [a, ...rest] = fs.readFileSync('./input/ch4/4-4.txt').toString().trim().split('\n')
+
+for(let i = 0; i <= a - 1; i += 1){
+    const [b, ...c] = rest[i].split(' ').map(Number)
+    const avr = c.reduce((a, b)=> a + b, 0)/b
+    let num = 0
+
+    c.map((item)=>{
+        if(item > avr){
+            num += 1
+        }
+    })
+    
+    const d = num / b * 100
+    console.log(`${d.toFixed(3)}%`)
+}

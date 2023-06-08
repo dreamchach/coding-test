@@ -50,3 +50,6 @@ https://www.acmicpc.net/problem/2562
 
 ### 4-3. 나머지
 https://www.acmicpc.net/problem/3052
+
+### 4-4. 평균은 넘겠지
+https://www.acmicpc.net/problem/4344

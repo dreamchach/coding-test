@@ -211,6 +211,7 @@ const line = rest[0].split(' ').map((item)=>parseInt(item))
 console.log(Math.min(...line), Math.max(...line))
 */
 
+/*
 // 4-2
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch4/4-2.txt').toString().split('\n')
@@ -219,3 +220,13 @@ const index = input.findIndex(item=> item === array[0])
 
 console.log(array[0])
 console.log(index + 1)
+*/
+
+// 4-3
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch4/4-3.txt').toString().trim().split('\n')
+let data = input.map(Number)
+const answer = new Set()
+
+data.map((item)=> answer.add(item%42))
+console.log(answer.size)

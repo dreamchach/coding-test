@@ -47,3 +47,6 @@ https://www.acmicpc.net/problem/10818
 
 ### 4-2. 최댓값
 https://www.acmicpc.net/problem/2562
+
+### 4-3. 나머지
+https://www.acmicpc.net/problem/3052

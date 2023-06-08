@@ -40,3 +40,7 @@ https://www.acmicpc.net/problem/2438
 
 ### 3-4. 빠른 A + B
 https://www.acmicpc.net/problem/15552
+
+## ch4. 배열 예제
+### 4-1. 최소, 최대
+https://www.acmicpc.net/problem/10818

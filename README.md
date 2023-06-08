@@ -60,3 +60,6 @@ https://www.acmicpc.net/problem/1546
 ## ch5. 문자열 예제
 ### 5-1. 숫자의 합
 https://www.acmicpc.net/problem/11720
+
+### 5-2. 문자열 반복
+https://www.acmicpc.net/problem/2675

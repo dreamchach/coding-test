@@ -233,6 +233,7 @@ data.map((item)=> answer.add(item%42))
 console.log(answer.size)
 */
 
+/*
 // 4-4
 const fs = require('fs')
 const [a, ...rest] = fs.readFileSync('./input/ch4/4-4.txt').toString().trim().split('\n')
@@ -251,3 +252,11 @@ for(let i = 0; i <= a - 1; i += 1){
     const d = num / b * 100
     console.log(`${d.toFixed(3)}%`)
 }
+*/
+
+// 4-5
+const fs = require('fs')
+const [a, ...b] = fs.readFileSync('./input/ch4/4-5.txt').toString().trim().split('\n')
+const c = b[0].split(' ').map(Number)
+const max = Math.max(...c)
+console.log(c.reduce((a, b)=>a + (b / max * 100), 0)/a)

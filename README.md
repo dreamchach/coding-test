@@ -53,3 +53,6 @@ https://www.acmicpc.net/problem/3052
 
 ### 4-4. 평균은 넘겠지
 https://www.acmicpc.net/problem/4344
+
+### 4-5. 평균
+https://www.acmicpc.net/problem/1546

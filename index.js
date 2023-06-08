@@ -276,6 +276,7 @@ for(let d of c){
 console.log(answer)
 */
 
+/*
 // 5-2
 let fs = require('fs');
 let input = fs.readFileSync('./input/ch5/5-2.txt').toString().split('\n');
@@ -290,3 +291,14 @@ for (let i = 1; i <= testCase; i++) {
     }
   console.log(result);
 }
+*/
+
+// 5-3.
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch5/5-3.txt').toString().trim().split('\n')
+const [a, b] = input[0].split(' ')
+
+const c = Number(a.split('').reverse().join(''))
+const d = Number(b.split('').reverse().join(''))
+
+console.log(Math.max(c, d))

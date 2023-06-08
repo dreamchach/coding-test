@@ -63,3 +63,6 @@ https://www.acmicpc.net/problem/11720
 
 ### 5-2. 문자열 반복
 https://www.acmicpc.net/problem/2675
+
+### 5-3. 상수
+https://www.acmicpc.net/problem/2908

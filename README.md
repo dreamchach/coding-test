@@ -44,3 +44,6 @@ https://www.acmicpc.net/problem/15552
 ## ch4. 배열 예제
 ### 4-1. 최소, 최대
 https://www.acmicpc.net/problem/10818
+
+### 4-2. 최댓값
+https://www.acmicpc.net/problem/2562

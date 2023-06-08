@@ -203,8 +203,19 @@ for(let i = 1; i <= length; i += 1){
 console.log(answer)
 */
 
+/*
 // 4-1
 const fs = require('fs')
 const [a, ...rest] = fs.readFileSync('./input/ch4/4-1.txt').toString().split('\n')
 const line = rest[0].split(' ').map((item)=>parseInt(item))
 console.log(Math.min(...line), Math.max(...line))
+*/
+
+// 4-2
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch4/4-2.txt').toString().split('\n')
+const array = [...input].sort((a,b)=> b - a)
+const index = input.findIndex(item=> item === array[0])
+
+console.log(array[0])
+console.log(index + 1)

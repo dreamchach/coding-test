@@ -69,3 +69,6 @@ https://www.acmicpc.net/problem/2908
 
 ### 5-4. 그룹 단어 체커
 https://www.acmicpc.net/problem/1316
+
+### 5-5. 단어의 개수
+https://www.acmicpc.net/problem/1152

@@ -305,6 +305,7 @@ const d = Number(b.split('').reverse().join(''))
 console.log(Math.max(c, d))
 */
 
+/*
 // 5-4
 const fs = require('fs')
 let [a, ...b] = fs.readFileSync('./input/ch5/5-4.txt').toString().trim().split('\n')
@@ -334,3 +335,10 @@ for(let i = 0; i <= a - 1; i += 1){
     }
 }
 console.log(summary)
+*/
+
+// 5-5
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch5/5-5.txt').toString().split('\n')
+const line = input[0].split(' ').filter(item => item !== '')
+console.log(line.length)

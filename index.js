@@ -293,6 +293,7 @@ for (let i = 1; i <= testCase; i++) {
 }
 */
 
+/*
 // 5-3.
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch5/5-3.txt').toString().trim().split('\n')
@@ -302,3 +303,34 @@ const c = Number(a.split('').reverse().join(''))
 const d = Number(b.split('').reverse().join(''))
 
 console.log(Math.max(c, d))
+*/
+
+// 5-4
+const fs = require('fs')
+let [a, ...b] = fs.readFileSync('./input/ch5/5-4.txt').toString().trim().split('\n')
+let summary = 0
+const check = (data) => {
+    let setData = new Set(data[0])
+    
+    for(let i = 0; i < data.length -1; i += 1){
+        if(data[i] !== data[i + 1]){
+            if(setData.has(data[i + 1])){
+                return false
+            }else {
+                setData.add(data[i + 1])
+            }
+        }
+    }
+    return true
+}
+
+a = Number(a)
+
+for(let i = 0; i <= a - 1; i += 1){
+    let data = b[i]
+    
+    if(check(data)) {
+        summary += 1
+    }
+}
+console.log(summary)

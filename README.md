@@ -66,3 +66,6 @@ https://www.acmicpc.net/problem/2675
 
 ### 5-3. 상수
 https://www.acmicpc.net/problem/2908
+
+### 5-4. 그룹 단어 체커
+https://www.acmicpc.net/problem/1316

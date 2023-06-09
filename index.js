@@ -345,9 +345,16 @@ const line = input[0].split(' ').filter(item => item !== '')
 console.log(line.length)
 */
 
+/*
 // 6-1.
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch6/6-1.txt').toString().trim().split('\n')
 const line = input[0].split(' ').map(Number)
 const upper = line.sort((a, b) => a - b).join(' ')
 console.log(upper)
+*/
+
+// 6-2
+const fs = require('fs')
+const [a, ...b] = fs.readFileSync('./input/ch6/6-2.txt').toString().trim().split('\n').map(Number)
+b.sort((a, b)=> a - b).map((item) => console.log(item))

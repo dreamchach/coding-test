@@ -76,3 +76,6 @@ https://www.acmicpc.net/problem/1152
 ## ch6. 정렬
 ### 6-1. 세수 정렬
 https://www.acmicpc.net/problem/2752
+
+### 6-2. 수 정렬하기
+https://www.acmicpc.net/problem/2750

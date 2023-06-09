@@ -354,7 +354,20 @@ const upper = line.sort((a, b) => a - b).join(' ')
 console.log(upper)
 */
 
+/*
 // 6-2
 const fs = require('fs')
 const [a, ...b] = fs.readFileSync('./input/ch6/6-2.txt').toString().trim().split('\n').map(Number)
 b.sort((a, b)=> a - b).map((item) => console.log(item))
+*/
+
+// 6-3
+const fs = require('fs')
+const [a, ...b] = fs.readFileSync('./input/ch6/6-3.txt').toString().trim().split('\n').map(Number)
+let answer = ''
+
+b.sort((a, b) => a - b)
+for(let c of b){
+    answer += c + '\n'
+}
+console.log(answer)

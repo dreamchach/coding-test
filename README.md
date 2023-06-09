@@ -79,3 +79,6 @@ https://www.acmicpc.net/problem/2752
 
 ### 6-2. 수 정렬하기
 https://www.acmicpc.net/problem/2750
+
+### 6-3. 수 정렬하기 2
+https://www.acmicpc.net/problem/2751

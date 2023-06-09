@@ -337,8 +337,17 @@ for(let i = 0; i <= a - 1; i += 1){
 console.log(summary)
 */
 
+/*
 // 5-5
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch5/5-5.txt').toString().split('\n')
 const line = input[0].split(' ').filter(item => item !== '')
 console.log(line.length)
+*/
+
+// 6-1.
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch6/6-1.txt').toString().trim().split('\n')
+const line = input[0].split(' ').map(Number)
+const upper = line.sort((a, b) => a - b).join(' ')
+console.log(upper)

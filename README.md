@@ -72,3 +72,7 @@ https://www.acmicpc.net/problem/1316
 
 ### 5-5. 단어의 개수
 https://www.acmicpc.net/problem/1152
+
+## ch6. 정렬
+### 6-1. 세수 정렬
+https://www.acmicpc.net/problem/2752

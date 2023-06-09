@@ -361,6 +361,7 @@ const [a, ...b] = fs.readFileSync('./input/ch6/6-2.txt').toString().trim().split
 b.sort((a, b)=> a - b).map((item) => console.log(item))
 */
 
+/*
 // 6-3
 const fs = require('fs')
 const [a, ...b] = fs.readFileSync('./input/ch6/6-3.txt').toString().trim().split('\n').map(Number)
@@ -371,3 +372,14 @@ for(let c of b){
     answer += c + '\n'
 }
 console.log(answer)
+*/
+
+// 6-4
+const fs = require('fs')
+const [a, b] = fs.readFileSync('./input/ch6/6-4.txt').toString().trim().split('\n')
+const [c, d] = a.split(' ').map(Number)
+const array = b.split(' ').map(Number).sort((a, b)=> a - b)
+
+const answer = array.filter((_, i)=> i === d - 1)
+
+console.log(...answer)

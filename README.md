@@ -82,3 +82,6 @@ https://www.acmicpc.net/problem/2750
 
 ### 6-3. 수 정렬하기 2
 https://www.acmicpc.net/problem/2751
+
+### 6-4. K번째 수
+https://www.acmicpc.net/problem/11004

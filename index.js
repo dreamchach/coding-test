@@ -386,6 +386,7 @@ const answer = array.filter((_, i)=> i === d - 1)
 console.log(...answer)
 */
 
+/*
 // 7-1
 const fs = require('fs')
 const [a, ...b] = fs.readFileSync('./input/ch7/7-1.txt').toString().trim().split('\n')
@@ -401,3 +402,24 @@ for(let c of answer){
     ans += c[0] + ' ' + c[1] + '\n'
 }
 console.log(ans)
+*/
+
+// 7-2
+let fs = require('fs');
+let input = fs.readFileSync('./input/ch7/7-2.txt').toString().split('\n');
+let n = Number(input[0]);
+let data = [];
+for (let i = 1; i <= n; i++) {
+    let [x, y] = input[i].split(' ').map(Number);
+    data.push([x, y]);
+}
+function compare (a, b) {
+if (a[1] != b[1]) return a[1] - b[1];
+    else return a[0] - b[0];
+}
+data.sort(compare);
+let answer = "";
+for (let point of data) {
+  answer += point[0] + " " + point[1] + "\n";
+}
+console.log(answer);

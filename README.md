@@ -89,3 +89,6 @@ https://www.acmicpc.net/problem/11004
 ## ch7. 정렬 2
 ### 7-1. 좌표 정렬하기
 https://www.acmicpc.net/problem/11650
+
+### 7-2. 좌표 정렬하기 2
+https://www.acmicpc.net/problem/11651

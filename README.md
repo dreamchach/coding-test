@@ -85,3 +85,7 @@ https://www.acmicpc.net/problem/2751
 
 ### 6-4. K번째 수
 https://www.acmicpc.net/problem/11004
+
+## ch7. 정렬 2
+### 7-1. 좌표 정렬하기
+https://www.acmicpc.net/problem/11650

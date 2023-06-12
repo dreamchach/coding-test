@@ -115,3 +115,7 @@ https://www.acmicpc.net/problem/11399
 
 ### 9-3. 잃어버린 괄호
 https://www.acmicpc.net/problem/1541
+
+## ch 10. 그리디 2
+### 10-1. 설탕 배달
+https://www.acmicpc.net/problem/2839

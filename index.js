@@ -533,6 +533,7 @@ for(let d of c){
 console.log(answer)
 */
 
+/*
 // 9-3
 let fs = require('fs')
 let input = fs.readFileSync('./input/ch9/9-3.txt').toString().trim().split('\n')
@@ -548,3 +549,26 @@ for(let i = 0; i < array.length; i += 1){
     }    
 }
 console.log(answer)
+*/
+
+// 10-1
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch10/10-1.txt').toString().trim().split('\n')
+let a = Number(input[0])
+let answer = 0
+let flag = false
+
+while (a >= 0) {
+    if(a === 0 || a % 5 === 0){
+        a = a / 5
+        answer += parseInt(a)
+        console.log(answer)
+        flag = true
+        break
+    }
+    a -= 3
+    answer += 1
+}
+if(!flag) {
+    console.log(-1)
+}

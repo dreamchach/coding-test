@@ -426,6 +426,7 @@ for (let point of data) {
 console.log(answer);
 */
 
+/*
 // 7-3
 let fs = require('fs')
 let [a, ...b] = fs.readFileSync('./input/ch7/7-3.txt').toString().trim().split('\n')
@@ -443,3 +444,24 @@ arr.sort((a, b) => {
 for(let c of arr){
     console.log(c)
 }
+*/
+
+// 8-1
+let fs = require('fs')
+let [a, ...b] = fs.readFileSync('./input/ch8/8-1.txt').toString().trim().split('\n')
+let c = b[0].split(' ').map(Number)
+let d = [...new Set(c)]
+let myMap = new Map()
+let answer = ''
+
+d.sort((a, b) => a - b)
+
+for(let i = 0; i < d.length; i += 1){
+    myMap.set(d[i], i)
+}
+
+for(let i of c) {
+    answer += myMap.get(i) + ' '
+}
+
+console.log(answer)

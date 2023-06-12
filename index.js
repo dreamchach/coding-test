@@ -446,6 +446,7 @@ for(let c of arr){
 }
 */
 
+/*
 // 8-1
 let fs = require('fs')
 let [a, ...b] = fs.readFileSync('./input/ch8/8-1.txt').toString().trim().split('\n')
@@ -462,6 +463,27 @@ for(let i = 0; i < d.length; i += 1){
 
 for(let i of c) {
     answer += myMap.get(i) + ' '
+}
+
+console.log(answer)
+*/
+
+// 8-2
+const fs = require('fs')
+const [a, ...b] = fs.readFileSync('./input/ch8/8-2.txt').toString().trim().split('\n')
+const c = b.map((item)=>item.split(' '))
+let answer = ''
+
+c.sort((a, b) => {
+    if(a[0] !== b[0]){
+        return Number(a[0]) - Number(b[0])
+    }
+})
+
+const d = c.map((item) => item.join(' '))
+
+for(let e of d){
+    answer += e + '\n'
 }
 
 console.log(answer)

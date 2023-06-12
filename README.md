@@ -99,3 +99,6 @@ https://www.acmicpc.net/problem/1181
 ## ch8. 정렬 3
 ### 8=1. 좌표 압축
 https://www.acmicpc.net/problem/18870
+
+### 8-2. 나이순 정렬
+https://www.acmicpc.net/problem/10814

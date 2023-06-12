@@ -112,3 +112,6 @@ https://www.acmicpc.net/problem/11047
 
 ### 9-2. ATM
 https://www.acmicpc.net/problem/11399
+
+### 9-3. 잃어버린 괄호
+https://www.acmicpc.net/problem/1541

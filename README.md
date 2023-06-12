@@ -109,3 +109,6 @@ https://www.acmicpc.net/problem/1427
 ## ch9. 그리디
 ### 9-1. 동전 0
 https://www.acmicpc.net/problem/11047
+
+### 9-2. ATM
+https://www.acmicpc.net/problem/11399

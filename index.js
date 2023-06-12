@@ -499,6 +499,7 @@ const a = input[0].split('').sort((a, b) => b - a).join('')
 console.log(a)
 */
 
+/*
 // 9-1
 const fs = require('fs')
 const [a, ...b] = fs.readFileSync('./input/ch9/9-1.txt').toString().trim().split('\n')
@@ -514,5 +515,18 @@ while (cost > 0) {
             break
         }
     }
+}
+console.log(answer)
+*/
+
+// 9-2
+const fs = require('fs')
+const [a, ...b] = fs.readFileSync('./input/ch9/9-2.txt').toString().trim().split('\n')
+const c = b[0].split(' ').map(Number).sort((a, b) => a - b)
+let answer = 0
+let e = 0
+for(let d of c){
+    e += d
+    answer += e
 }
 console.log(answer)

@@ -468,6 +468,7 @@ for(let i of c) {
 console.log(answer)
 */
 
+/*
 // 8-2
 const fs = require('fs')
 const [a, ...b] = fs.readFileSync('./input/ch8/8-2.txt').toString().trim().split('\n')
@@ -487,3 +488,11 @@ for(let e of d){
 }
 
 console.log(answer)
+*/
+
+// 8-3
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch8/8-3.txt').toString().trim().split('\n')
+const a = input[0].split('').sort((a, b) => b - a).join('')
+
+console.log(a)

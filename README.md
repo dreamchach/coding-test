@@ -102,3 +102,6 @@ https://www.acmicpc.net/problem/18870
 
 ### 8-2. 나이순 정렬
 https://www.acmicpc.net/problem/10814
+
+### 8-3. 소트인사이드
+https://www.acmicpc.net/problem/1427

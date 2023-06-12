@@ -404,6 +404,7 @@ for(let c of answer){
 console.log(ans)
 */
 
+/*
 // 7-2
 let fs = require('fs');
 let input = fs.readFileSync('./input/ch7/7-2.txt').toString().split('\n');
@@ -423,3 +424,22 @@ for (let point of data) {
   answer += point[0] + " " + point[1] + "\n";
 }
 console.log(answer);
+*/
+
+// 7-3
+let fs = require('fs')
+let [a, ...b] = fs.readFileSync('./input/ch7/7-3.txt').toString().trim().split('\n')
+let arr = [...new Set(b)]
+arr.sort((a, b) => {
+    if(a.length !== b.length) {
+        return a.length - b.length
+    } else {
+        if(a < b) return -1
+        else if(a > b) return 1
+        else return 0
+    }
+})
+
+for(let c of arr){
+    console.log(c)
+}

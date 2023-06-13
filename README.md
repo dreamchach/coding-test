@@ -119,3 +119,6 @@ https://www.acmicpc.net/problem/1541
 ## ch 10. 그리디 2
 ### 10-1. 설탕 배달
 https://www.acmicpc.net/problem/2839
+
+### 10-2. A → B
+https://www.acmicpc.net/problem/16953

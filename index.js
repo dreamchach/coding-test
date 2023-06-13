@@ -551,6 +551,7 @@ for(let i = 0; i < array.length; i += 1){
 console.log(answer)
 */
 
+/*
 // 10-1
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch10/10-1.txt').toString().trim().split('\n')
@@ -572,3 +573,26 @@ while (a >= 0) {
 if(!flag) {
     console.log(-1)
 }
+*/
+
+// 10-2
+let fs = require('fs')
+let input = fs.readFileSync('./input/ch10/10-2.txt').toString().trim().split('\n')
+let [a, b] = input[0].split(' ').map(Number)
+let answer = 1
+let flag = false
+
+while (a <= b) {
+    if(a === b){
+        flag = true
+        break
+    }
+    if(b % 2 === 0) {
+        b = parseInt(b / 2)
+    }else if(b % 10 === 1){
+        b = parseInt(b / 10)
+    }else break
+    answer += 1
+}
+
+console.log(flag ? answer : -1)

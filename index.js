@@ -599,9 +599,10 @@ while (a <= b) {
 console.log(flag ? answer : -1)
 */
 
+/*
 // 10-3
-const fs = require('fs')
-const input = fs.readFileSync('./input/ch10/10-3.txt').toString().trim().split('\n')
+let fs = require('fs')
+let input = fs.readFileSync('./input/ch10/10-3.txt').toString().trim().split('\n')
 let number = Number(input[0])
 let answer = 0
 let sum = 0
@@ -611,3 +612,33 @@ while (sum <= number) {
     sum += answer
 }
 console.log(answer - 1)
+*/
+
+// 10-4
+let fs = require('fs')
+let input = fs.readFileSync('./input/ch10/10-4.txt').toString().trim().split('\n')
+let test = Number(input[0])
+let line = 1
+
+for(let tc = 0; tc < test; tc += 1){
+    let n = Number(input[line])
+    let arr = []
+    let count = 0
+    let minValue = 100001
+
+    for(let i = line + 1; i <= line + n; i += 1){
+        let data = input[i].split(' ').map(Number)
+        arr.push(data)
+    }
+
+    arr.sort((a, b) => a[0] - b[0])
+    
+    for(let [x, y] of arr) {
+        if(y < minValue) {
+            minValue = y
+            count += 1
+        }
+    }
+    console.log(count)
+    line += n + 1
+}

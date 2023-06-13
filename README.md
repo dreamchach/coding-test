@@ -125,3 +125,6 @@ https://www.acmicpc.net/problem/16953
 
 ### 10-3. 수들의 합
 https://www.acmicpc.net/problem/1789
+
+### 10-4. 신입 사원
+https://www.acmicpc.net/problem/1946

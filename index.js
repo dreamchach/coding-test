@@ -614,6 +614,7 @@ while (sum <= number) {
 console.log(answer - 1)
 */
 
+/*
 // 10-4
 let fs = require('fs')
 let input = fs.readFileSync('./input/ch10/10-4.txt').toString().trim().split('\n')
@@ -642,3 +643,23 @@ for(let tc = 0; tc < test; tc += 1){
     console.log(count)
     line += n + 1
 }
+*/
+
+// 11-1
+let fs = require('fs')
+let [a, b, c] = fs.readFileSync('./input/ch11/11-1.txt').toString().trim().split('\n')
+let dist = b.split(' ').map(Number)
+let cost = c.split(' ').map(Number)
+let minCost = cost[0]
+let answer = BigInt(0)
+
+for(let i = 0; i < a; i += 1){
+    minCost = Math.min(minCost, cost[i])
+    cost[i] = minCost
+}
+
+for(let i = 0; i < a - 1; i += 1){
+    answer += BigInt(dist[i]) * BigInt(cost[i])
+}
+
+console.log(String(answer))

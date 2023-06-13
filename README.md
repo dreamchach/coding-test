@@ -132,3 +132,6 @@ https://www.acmicpc.net/problem/1946
 ## ch11. 그리디 3
 ### 11-1. 주유소
 https://www.acmicpc.net/problem/13305
+
+### 11-2. 회의실 배정
+https://www.acmicpc.net/problem/1931

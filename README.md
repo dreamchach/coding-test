@@ -122,3 +122,6 @@ https://www.acmicpc.net/problem/2839
 
 ### 10-2. A → B
 https://www.acmicpc.net/problem/16953
+
+### 10-3. 수들의 합
+https://www.acmicpc.net/problem/1789

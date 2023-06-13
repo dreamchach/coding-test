@@ -575,6 +575,7 @@ if(!flag) {
 }
 */
 
+/*
 // 10-2
 let fs = require('fs')
 let input = fs.readFileSync('./input/ch10/10-2.txt').toString().trim().split('\n')
@@ -596,3 +597,17 @@ while (a <= b) {
 }
 
 console.log(flag ? answer : -1)
+*/
+
+// 10-3
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch10/10-3.txt').toString().trim().split('\n')
+let number = Number(input[0])
+let answer = 0
+let sum = 0
+
+while (sum <= number) {
+    answer += 1
+    sum += answer
+}
+console.log(answer - 1)

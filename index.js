@@ -666,6 +666,7 @@ for(let i = 0; i < a - 1; i += 1){
 console.log(String(answer))
 */
 
+/*
 // 11-2
 let fs = require('fs')
 let input = fs.readFileSync('./input/ch11/11-2.txt').toString().trim().split('\n')
@@ -694,3 +695,26 @@ for(let i = 1; i < n; i += 1){
     }
 }
 console.log(cnt)
+*/
+
+// 11-3
+let fs = require('fs')
+let [a, ...b] = fs.readFileSync('./input/ch11/11-3.txt').toString().trim().split('\n')
+const solution = (b) => {
+    let arr = b[0].split(' ').map(Number)
+    let arrows = Array.from({length:1000000}, () => 0)
+    let answer = 0
+
+    for(let i of arr) {
+        if(arrows[i]) {
+            arrows[i] -= 1
+            arrows[i - 1] += 1
+        }else {
+            answer += 1
+            arrows[i - 1] += 1
+        }
+    }
+    return answer
+}
+console.log(solution(b))
+

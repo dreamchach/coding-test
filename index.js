@@ -697,6 +697,7 @@ for(let i = 1; i < n; i += 1){
 console.log(cnt)
 */
 
+/*
 // 11-3
 let fs = require('fs')
 let [a, ...b] = fs.readFileSync('./input/ch11/11-3.txt').toString().trim().split('\n')
@@ -717,4 +718,58 @@ const solution = (b) => {
     return answer
 }
 console.log(solution(b))
+*/
 
+/*
+// 11-4
+let fs = require('fs')
+let [a, ...b] = fs.readFileSync('./input/ch11/11-4.txt').toString().trim().split('\n')
+let pibo = [0, 1]
+let testCases = Number(a)
+
+while (pibo[pibo.length - 1] < 1e9) {
+    pibo.push(pibo[pibo.length - 2] + pibo[pibo.length - 1])
+}
+
+for(let tc = 0; tc < testCases; tc += 1){
+    let n = Number(b[tc])
+    let result = []
+    let i = pibo.length - 1
+    let answer = ''
+
+    while (n > 0) {
+        if(n >= pibo[i]) {
+            n -= pibo[i]
+            result.push(pibo[i])
+        }
+        i -= 1        
+    }
+
+    for(let i = result.length - 1; i >= 0; i -= 1){
+        answer += result[i] + ' '
+    }
+    
+    console.log(answer)
+}
+*/
+
+// 12-1
+let fs = require('fs')
+let input = fs.readFileSync('./input/ch12/12-1.txt').toString().trim().split('\n')
+let [a, b] = input[0].split(' ').map(Number)
+let summary = 0
+
+for(let i = 1; i < b + 1; i += 1) {
+    summary += i
+}
+
+if(summary > a) {
+    console.log(-1)
+}else {
+    a -= summary
+    if(a % b === 0){
+        console.log(b - 1)
+    }else {
+        console.log(b)
+    }
+}

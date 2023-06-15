@@ -138,3 +138,10 @@ https://www.acmicpc.net/problem/1931
 
 ### 11-3. 풍선 맞추기
 https://www.acmicpc.net/problem/11509
+
+### 11-4. 피보나치
+https://www.acmicpc.net/problem/9009
+
+## ch12. 그리디 4
+### 12-1. 박 터뜨리기
+https://www.acmicpc.net/problem/19939

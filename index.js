@@ -776,6 +776,7 @@ if(summary > a) {
 }
 */
 
+/*
 // 12-2
 const fs = require('fs')
 const input = fs.readFileSync('./input/ch12/12-2.txt').toString().trim().split('\n')
@@ -810,4 +811,47 @@ for(let tc = 1; tc <= testCase; tc += 1){
             console.log(2)
         }
     }
+}
+*/
+
+// 12-3
+let fs = require('fs')
+let [a, b, ...c] = fs.readFileSync('./input/ch12/12-3.txt').toString().trim().split('\n')
+let [length, w, h] = a.split(' ').map(Number)
+let cubes = Array(20).fill(0)
+let n = Number(b)
+let res = 0
+let used = 0
+let square = (x) => {
+    let i = 1
+    while ((2 ** i) <= x) {
+        i += 1
+    }
+    return i - 1
+}
+let size = square(length)
+
+for(let i of c){
+    let [a, b] = i.split(' ').map(Number)
+    cubes[a] = b
+}
+
+size = Math.min(size, square(w))
+size = Math.min(size, square(h))
+
+for(let i = size; i >= 0; i -= 1){
+    used *= 8
+    cur = (2 ** i)
+    
+    let required = parseInt(length / cur) * parseInt(w / cur) * parseInt(h / cur) - used
+    let usage = Math.min(required, cubes[i])
+    
+    res += usage
+    used += usage
+}
+
+if(used === length * w * h) {
+    console.log(res)
+}else {
+    console.log(-1)
 }

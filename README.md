@@ -148,3 +148,6 @@ https://www.acmicpc.net/problem/19939
 
 ### 12-2. 회문
 https://www.acmicpc.net/problem/17609
+
+### 12-3. 박스 채우기
+https://www.acmicpc.net/problem/1493

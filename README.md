@@ -145,3 +145,6 @@ https://www.acmicpc.net/problem/9009
 ## ch12. 그리디 4
 ### 12-1. 박 터뜨리기
 https://www.acmicpc.net/problem/19939
+
+### 12-2. 회문
+https://www.acmicpc.net/problem/17609

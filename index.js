@@ -753,6 +753,7 @@ for(let tc = 0; tc < testCases; tc += 1){
 }
 */
 
+/*
 // 12-1
 let fs = require('fs')
 let input = fs.readFileSync('./input/ch12/12-1.txt').toString().trim().split('\n')
@@ -771,5 +772,42 @@ if(summary > a) {
         console.log(b - 1)
     }else {
         console.log(b)
+    }
+}
+*/
+
+// 12-2
+const fs = require('fs')
+const input = fs.readFileSync('./input/ch12/12-2.txt').toString().trim().split('\n')
+let testCase = Number(input[0])
+
+const a = (a) => {
+    return a === a.split('').reverse().join('')
+}
+
+for(let tc = 1; tc <= testCase; tc += 1){
+    let data = input[tc]
+
+    if(a(data)){
+        console.log(0)
+    }else {
+        let found = false
+        let n = data.length
+
+        for(let i = 0; i < parseInt(n / 2); i += 1){
+            if(data[i] !== data[n - i - 1]) {
+                if(a(data.slice(0, i) + data.slice(i + 1, n))){
+                    found = true
+                } else if(a(data.slice(0, n - i - 1) + data.slice(n - i, n))){
+                    found = true
+                }
+                break
+            }
+        }
+        if(found) {
+            console.log(1)
+        }else {
+            console.log(2)
+        }
     }
 }
